@@ -1,0 +1,13 @@
+{%extends 'store/base.html'%}
+
+{%block main_block%}
+
+
+<form action="" method="post" enctype="multipart/form-data" class="border w-1/2 mx-auto p-5 drope-shadow lg">
+    {%csrf_token%}
+    {{form}}
+    <button type="submit" class='p-2 mt-3 rounded-md bg-stone-950 text-white'>Add</button>
+</form>
+
+
+{%endblock%}
